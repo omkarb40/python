@@ -1,20 +1,11 @@
-# Write a Python program that reads a number of seconds and prints it in the format - hrs:min:secs
-
-# Python Program to Convert seconds
-# into hours, minutes and seconds
-
-def convert(seconds):
-    seconds = seconds % (24 * 3600)
-    hour = seconds // 3600
-    seconds %= 3600
-    minutes = seconds // 60
-    seconds %= 60
-
-    return "%d:%02d:%02d" % (hour, minutes, seconds)
-
-
-# Driver program
-n=int(input("Enter the time in seconds:"))
-print(convert(n))
-
-
+# Write a Python program to calculate and print the sums of odd and even integers of the first n natural numbers
+n=int(input("Enter the number:"))
+evensum=0
+oddsum=0
+for number in range(1,n+1):
+    if(number%2==0):
+        evensum=evensum+number
+    else:
+        oddsum=oddsum+number
+print("Sum of all even numbers is",evensum)
+print("Sum of all odd numbers is",oddsum)
