@@ -1,10 +1,11 @@
-# Write a Python program to find the largest of 3 numbers.
-num1=int(input("Enter num1:"))
-num2=int(input("Enter num2:"))
-num3=int(input("Enter num3:"))
-if (num1>=num2) and (num1>=num3):
-    print("Num1 is the largest")
-elif(num2>=num1) and (num2>=num3):
-    print("Num2 is the largest")
-elif(num3>=num1) and (num3>=num2):
-    print("Num3 is the largest")
+# Write a Python program to read the three sides of a triangle and print whether the triangle is equilateral, isosceles or scalene
+print("Enter sides of traingle")
+a=float(input("a : "))
+b=float(input("b : "))
+c=float(input("c : "))
+if a==b and a==c :
+    print("Triangle is equilateral")
+elif (a==b or b==c) or a==c :
+    print("Triangle is isosceles")
+else :
+    print("Triangle is scalene")
