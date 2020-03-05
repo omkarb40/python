@@ -1,12 +1,15 @@
-# Write a Python program to check if the square of a number is prime or not.
-n=int(input("Enter n : "))
-square=n*n
-flag=0
-for i in range (1,square+1) :
-    if square % i == 0 :
-        flag=1
-        break
-if flag == 0 :
-    print("square of {0} is a prime number".format(n))
-else :
-    print("square of {0} is not a prime number".format(n))
+'''
+Write a function that computes the factorial of a number.
+The function should take the number as a parameter and return the factorial value.
+'''
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+n = int(input("Enter n:"))
+print(factorial(n))
