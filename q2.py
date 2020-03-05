@@ -1,21 +1,17 @@
-"""
-Write a Python program to print the following series:
-a) 1,4,7,10….n terms
-b) 1,-4,7,-10,…,n terms
-"""
-n=int(input("Enter n : "))
-series=1
-for i in range (n) :
-    print(series," ",end="")
-    series+=3
+'''
+Write a function that computes the sum of all digits.
+Pass the number as a parameter and return the computed sum.
+'''
 
-n=int(input("Enter n : "))
-x=1
-for i in range (n) :
-    print(x," ",end="")
-    if i % 2 == 0:
-        x *= (-1)
-        x -= 3
-    else:
-        x *= (-1)
-        x += 3
+
+def getsum(n):
+
+    sum=0
+    while(n!=0):
+        sum=sum+int(n%10)
+        n=int(n/10)
+    return sum
+n=int(input("enter n:"))
+print(getsum(n))
+
+

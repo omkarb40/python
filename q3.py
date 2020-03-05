@@ -1,11 +1,21 @@
-# Write a Python program to read the three sides of a triangle and print whether the triangle is equilateral, isosceles or scalene
-print("Enter sides of traingle")
-a=float(input("a : "))
-b=float(input("b : "))
-c=float(input("c : "))
-if a==b and a==c :
-    print("Triangle is equilateral")
-elif (a==b or b==c) or a==c :
-    print("Triangle is isosceles")
-else :
-    print("Triangle is scalene")
+"""
+Write a function that checks if a number is prime or not.
+Pass the number as a parameter and return True if the number is prime, otherwise return False.
+"""
+
+
+def prime(n):
+    if n == 1 or n == 0:
+        return "FALSE"
+    else:
+        for i in range(2, n):
+            if n % i == 0:
+                return "FALSE"
+            else:
+                pass
+    return "TRUE"
+
+
+a = int(input("Enter n:"))
+s = prime(a)
+print(s)

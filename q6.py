@@ -1,7 +1,12 @@
-# Write a Python program to check if a number is divisible by another number of not.
-num1=int(input("Enter num1:"))
-num2=int(input("Enter num2:"))
-if(num1%num2==0):
-    print("The number is divisible")
-else:
-    print("The number is not divisible")
+"""
+Write a function that converts Celsius reading to Fahrenheit reading.
+Read the Celsius value from the user in the function and also print the Fahrenheit reading in the function itself.
+"""
+def Conv(c):
+    f=(c*5/9)+32
+    print("C=",c,"and F=",f)
+c=int(input("Enter temp in c:"))
+Conv(c)
+
+
+

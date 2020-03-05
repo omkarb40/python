@@ -1,8 +1,9 @@
-# Write a Python program to print the sum of first n natural numbers, where n is entered by the user.
-n=int(input("Enter the number:"))
-sum=0
-i=1
-while i<=n:
-    sum=sum+i
-    i=i+1
-print("The sum of first",n,"natural numbers is",sum)
+# Design a function having both parameters and return statement
+def function(*n):
+    m=0
+    for i in n:
+       m=m+i
+    return m
+
+s=function(1,2,3)
+print(s)

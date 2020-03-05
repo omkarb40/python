@@ -1,13 +1,16 @@
-# Write a Python program to print the sum of the following sequence:
-#
-# 0,1,1,2,3,5,8,….. (n terms)
-n=int(input("Enter n : "))
-a=0
-b=1
-print(0," ",end="")
-for i in range (1,n) :
-    print(b," ",end="")
-    sum=a+b
-    a=b
-    b=sum
-    
+"""
+Write a function that computes the simple interest.
+Pass the principal amount, the rate and the time as parameters to the function.
+"""
+
+
+def Interest(P, I, T):
+    A = P * (1 + (I * T))
+    return A
+
+
+P = int(input("Enter P:"))
+I = int(input("Enter I:"))
+T = int(input("Enter T:"))
+A = Interest(P, I, T)
+print(A)
