@@ -1,8 +1,13 @@
-# Write a Python program that swaps the value of two variables with the help of a third variable
-x=5
-y=10
-temp = x
-x = y
-y = temp
-print("The values after swapping will be x:",x,"y:",y)
-# here we use temp as a temporary third variable to swap variables
+# Write a Python program to print the sum of the following sequence:
+#
+# 0,1,1,2,3,5,8,….. (n terms)
+n=int(input("Enter n : "))
+a=0
+b=1
+print(0," ",end="")
+for i in range (1,n) :
+    print(b," ",end="")
+    sum=a+b
+    a=b
+    b=sum
+    
