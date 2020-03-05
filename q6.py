@@ -1,9 +1,7 @@
-# Write a Python program that swaps the value of two variables without using a third variable.
-
-x=5
-y=10
-x=x^y
-y=x^y
-x=x^y
-print("After swapping x:",x,"y:",y)
-# Here we use XOR (^) operator to swap 2 variables
+# Write a Python program to check if a number is divisible by another number of not.
+num1=int(input("Enter num1:"))
+num2=int(input("Enter num2:"))
+if(num1%num2==0):
+    print("The number is divisible")
+else:
+    print("The number is not divisible")

@@ -1,3 +1,8 @@
-# Write a Python program to read the users name and then greet the user by specifying a welcome message such as Hello User or Welcome User.
-name = input("Enter your name:")
-print("Hello ",name)
+# Write a Python program to print the sum of first n natural numbers, where n is entered by the user.
+n=int(input("Enter the number:"))
+sum=0
+i=1
+while i<=n:
+    sum=sum+i
+    i=i+1
+print("The sum of first",n,"natural numbers is",sum)
